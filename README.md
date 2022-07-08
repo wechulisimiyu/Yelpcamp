@@ -1,6 +1,6 @@
 # 🏕 YelpCamp
 
-This is a web application where sers can create and review campgrounds. In order to review or create a campground, users must have an account.
+This is a web application where users can create and review campgrounds. In order to review or create a campground, users must have an account.
 
 This project was created using Node.js, Express, MongoDB, and Bootstrap. Passport.js was used to handle authentication.  
 
