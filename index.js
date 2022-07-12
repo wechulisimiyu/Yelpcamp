@@ -22,9 +22,9 @@ const reviewRoutes = require('./routes/reviews');
 const { func } = require('joi');
 const MongoDBStore = require('connect-mongo')(session);
 const dbUrl = process.env.DB_URL || 'mongodb://localhost:27017/yelp-camp';
-//const dbUrlMongo = 'mongodb://localhost:27017/yelp-camp';
+const dbUrlMongo = 'mongodb://localhost:27017/yelp-camp';
 
-mongoose.connect(dbUrl, {
+mongoose.connect(dbUrlMongo, {
     useNewUrlParser: true,
     useCreateIndex: true,
     useUnifiedTopology: true,
@@ -117,7 +117,7 @@ app.use(
                 "'self'",
                 "blob:",
                 "data:",
-                "https://res.cloudinary.com/dmvgmogaf/", //SHOULD MATCH YOUR CLOUDINARY ACCOUNT! 
+                "https://res.cloudinary.com/drgmee3w5/", //SHOULD MATCH YOUR CLOUDINARY ACCOUNT! 
                 "https://images.unsplash.com/",
             ],
             fontSrc: ["'self'", ...fontSrcUrls],
@@ -155,7 +155,7 @@ app.all('*', (req, res, next) => {
 
 app.use((err, req, res, next) => {
     const { statusCode = 500 } = err;
-    if (!err.message) err.message = 'Oh no, something wet wrong!'
+    if (!err.message) err.message = 'Oh no, something went wrong!'
     res.status(statusCode).render('error', { err })
 });
 
