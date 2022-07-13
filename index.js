@@ -1,6 +1,6 @@
 if (process.env.NODE_ENV !== "production") {
     require('dotenv').config();
-}
+} //if we are still in production, pick the data from .env file
 
 const express = require('express');
 const path = require('path');
@@ -26,7 +26,7 @@ const dbUrl = process.env.DB_URL || 'mongodb://localhost:27017/yelp-camp';
 mongoose.connect(dbUrl, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
-});
+}); //using cloud database since the local one crashed
 
 const db = mongoose.connection;
 db.on("error", console.error.bind(console, "connection error:"));
@@ -57,6 +57,8 @@ const store = MongoStore.create({
 store.on("error", function (e) {
     console.log("SESSION STORE ERROR", e)
 })
+
+//setting session expiry
 
 const sessionConfig = {
     store,
@@ -113,7 +115,7 @@ app.use(
                 "'self'",
                 "blob:",
                 "data:",
-                "https://res.cloudinary.com/drgmee3w5", //SHOULD MATCH YOUR CLOUDINARY ACCOUNT! This is mine
+                "https://res.cloudinary.com/", //SHOULD MATCH YOUR CLOUDINARY ACCOUNT!
                 "https://images.unsplash.com",
             ],
             fontSrc: ["'self'", ...fontSrcUrls],
@@ -159,5 +161,5 @@ app.use((err, req, res, next) => {
 
 const port = process.env.PORT || 3000;
 app.listen(port, () => {
-    console.log(`Serving at http://localhost:${port}`)
+    console.log(`Serving at port ${port}`)
 })

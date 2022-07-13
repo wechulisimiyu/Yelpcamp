@@ -19,9 +19,9 @@ module.exports.createCampground = async (req, res, next) => {
         query: req.body.campground.location,
         limit: 1
     }).send()
-    const campground = new Campground(req.body.campground);
-    campground.geometry = geoData.body.features[0].geometry;
-    campground.images = req.files.map(f => ({ url: f.path, filename: f.filename }));
+    const campground = new Campground(req.body.campground); // takes the data entered
+    campground.geometry = geoData.body.features[0].geometry; //hardcodes the coordinates
+    campground.images = req.files.map(f => ({ url: f.path, filename: f.filename })); //hardcodes the url and file
     campground.author = req.user._id;
     await campground.save();
     console.log(campground);
