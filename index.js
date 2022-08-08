@@ -37,8 +37,8 @@ db.once("open", () => {
 });
 
 client.on('connect', function () {
-    console.log('Redis Connected!');
-});
+    console.log('Redis database onnected!');
+}); //redis db connected status
 
 const app = express();
 
