@@ -12,10 +12,10 @@ This project was created using Node.js, Express, MongoDB, and Bootstrap. Passpor
 ## Built With
 
 - [Node.js](https://nodejs.org) - Node.js® is a JavaScript runtime built on Chrome's V8 JavaScript engine.
-- [express](https://expressjs.com//) - Fast, unopinionated, minimalist web framework for Node.js
+- [Express](https://expressjs.com//) - Fast, unopinionated, minimalist web framework for Node.js
 - [MongoDB](https://www.mongodb.com/) - NoSQL database for modern applications
 - [Mongoose](https://mongoosejs.com/) - Elegant MongoDB object modeling for Node.js
-- [ejs](https://ejs.co/) - Embedded JavaScript templating
+- [Ejs](https://ejs.co/) - Embedded JavaScript templating
 
 ## Features
 * Users can create, edit, and remove campgrounds
@@ -26,8 +26,8 @@ This project was created using Node.js, Express, MongoDB, and Bootstrap. Passpor
 
 ## Running it locally
 1. Install [mongodb](https://www.mongodb.com/)
-2. Create a cloudinary account to get an API key and secret code
-3. Crreate a mapbox account to get a token
+2. Create a [cloudinary account](https://cloudinary.com/) to get an API key and secret code
+3. Crreate a [mapbox account](https://www.mapbox.com/) to get a token
 
 Install node, using the [Node Version Manager](https://github.com/nvm-sh/nvm "Official Node Version Manager Github page").
 
