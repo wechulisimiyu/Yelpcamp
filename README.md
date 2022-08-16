@@ -2,7 +2,7 @@
 
 <a href="https://local-campgrounds.herokuapp.com/">
  <p align="center">
-  <img src="https://imgur.com/a/Q9M8ihH?w="350" alt="Campground"
+  <img src="https://imgur.com/a/Q9M8ihH?w=350" alt="Campground">
  </p>
 </a>
 
@@ -31,7 +31,7 @@ This project was created using Node.js, Express, MongoDB, and Bootstrap. Passpor
 2. Create a cloudinary account to get an API key and secret code
 3. Crreate a mapbox account to get a token
 
-Install node, use the [Node Version Manager](https://github.com/nvm-sh/nvm "Official Node Version Manager Github page").
+Install node, using the [Node Version Manager](https://github.com/nvm-sh/nvm "Official Node Version Manager Github page").
 
 Alternatively, you can use nodemon to run the app.
 - To install nodemon, run ```npm install nodemon -g```
