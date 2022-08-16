@@ -1,7 +1,7 @@
 # 🏕 YelpCamp
 
-<a href="https://local-campgrounds.herokuapp.com/">
-  <img src="https://imgur.com/a/Q9M8ihH?w=350" alt="Campground">
+<a href="https://local-campgrounds.herokuapp.com/" target="_blank">
+  <img src="https://imgur.com/a/Q9M8ihH" alt="Campground">
 </a>
 
 
