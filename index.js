@@ -42,6 +42,7 @@ client.on('connect', function () {
 
 const app = express();
 
+//ejs configuration
 app.engine('ejs', ejsMate)
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'))
