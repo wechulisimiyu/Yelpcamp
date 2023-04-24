@@ -18,8 +18,6 @@ const mongoSanitize = require('express-mongo-sanitize');
 const userRoutes = require('./routes/users');
 const campgroundRoutes = require('./routes/campgrounds');
 const reviewRoutes = require('./routes/reviews');
-const redis = require('redis');
-const client = redis.createClient();
 
 const MongoStore = require("connect-mongo");
 
@@ -37,10 +35,6 @@ db.on("error", console.error.bind(console, "connection error:"));
 db.once("open", () => {
     console.log("Database connected");
 });
-
-client.on('connect', function () {
-    console.log('Redis database onnected!');
-}); //redis db connected status
 
 const app = express();
 
