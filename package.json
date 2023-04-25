@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "YelpCamp is a website where the users can create and review campgrounds. In order to review or create a campground, users must have an account.",
   "main": "index.js",
+  "engines": {
+    "node": "18.x"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js"
