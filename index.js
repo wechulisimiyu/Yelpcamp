@@ -27,7 +27,6 @@ mongoose.set('strictQuery', false);
 
 mongoose.connect(dbUrl, {
     useNewUrlParser: true,
-    useUnifiedTopology: true,
 }); //using cloud database since the local one crashed
 
 const db = mongoose.connection;

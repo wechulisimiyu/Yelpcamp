@@ -3,3 +3,8 @@
 **/dump.rdb
 **/txt.txt
 fly.toml
+.env
+node_modules
+.env
+dump.rdb
+txt.txt
