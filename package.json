@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/wechu07/Yelpcamp#readme",
   "dependencies": {
-    "@mapbox/mapbox-sdk": "^0.15.5",
+    "@mapbox/mapbox-sdk": "^0.15.6",
     "cloudinary": "^1.41.3",
     "connect-flash": "^0.1.1",
     "connect-mongo": "^5.1.0",
